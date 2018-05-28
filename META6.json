@@ -1,0 +1,21 @@
+{
+  "authors"       : [ "David Warring" ],
+  "perl"          : "6.c",
+  "license"       : "Artistic-2.0",
+  "name"          : "NativeCall::Demo",
+  "tags"          : [ ], 
+  "version"       : "0.0.1",
+  "auth"          : "github:dwarring",
+  "description"   : "Hacked together for SO question https://stackoverflow.com/questions/50553365/triple-pointer-native-call-on-perl-6/50557960#50557960",
+  "depends"       : [ "LibraryMake" ],
+  "build-depends" : [ ],
+  "test-depends"  : [ ],
+  "provides"      : {
+      "NativeCall::Demo" : "lib/NativeCall/Demo.pm"
+   },
+  "resources" : [
+    "lib/libtest.so",
+    "lib/libtest.dll",
+    "lib/libtest.dylib"
+  ]
+}
