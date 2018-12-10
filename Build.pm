@@ -15,13 +15,10 @@ class Build {
         mkdir($destfolder);
         LibraryMake::process-makefile($folder, %vars);
         shell(%vars<MAKE>);
-
-        my @fake-lib-exts = <.so .dll .dylib>.grep(* ne %vars<SO>);
-        "$destfolder/lib$libname$_".IO.open(:w) for @fake-lib-exts;
     }
 
     method build($workdir) {
-        my $destdir = 'resources/lib';
+        my $destdir = 'resources/libraries';
         mkdir $destdir;
         make($workdir, "$destdir", :libname<test>);
         True;
