@@ -11,11 +11,9 @@
   "build-depends" : [ ],
   "test-depends"  : [ ],
   "provides"      : {
-      "NativeCall::Demo" : "lib/NativeCall/Demo.pm"
+      "NativeCall::Demo" : "lib/NativeCall/Demo.rakumod"
    },
   "resources" : [
-    "lib/libtest.so",
-    "lib/libtest.dll",
-    "lib/libtest.dylib"
+    "libraries/test"
   ]
 }

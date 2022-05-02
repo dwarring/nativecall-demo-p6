@@ -1,0 +1,4 @@
+.precomp
+Makefile
+resources/libraries
+src/*.o
